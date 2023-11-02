@@ -5,6 +5,7 @@ const COLOR = {
   gray: '#DFE2E4',
   green: '#21BF73',
   red: '#D90429',
+  bg: '#F8F9FA',
   textPrimary: '#212529',
   textSecondary: '#6C757D',
 }
@@ -21,10 +22,55 @@ const SIZES = {
 const CONTAINER = {
   card: {
     padding: 16,
-    background: COLOR.secondary,
+    backgroundColor: COLOR.secondary,
+    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.075)',
+    borderRadius: 8,
+    marginVertical: 4,
+  },
+  img: {
+    backgroundColor: COLOR.secondary,
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.075)',
     borderRadius: 8,
   }
 }
 
-export { COLOR, CONTAINER };
+const TEXT = {
+  title: {
+    fontSize: 20,
+    color: COLOR.textPrimary,
+    fontWeight: 700,
+    lineHeight: 20,
+  },
+  name: {
+    fontSize: 16,
+    color: COLOR.textPrimary,
+    fontWeight: 450,
+    lineHeight: 20,
+  },
+  sub: {
+    fontSize: 12,
+    color: COLOR.textPrimary,
+    fontWeight: 450,
+    lineHeight: 20,
+  },
+  danger: {
+    fontSize: 10,
+    color: COLOR.red,
+    fontWeight: 500,
+    lineHeight: 13,
+  },
+  blueSmall: {
+    fontSize: 10,
+    color: COLOR.blue,
+    fontWeight: 450,
+    lineHeight: 13,
+  },
+  blackSmall: {
+    fontSize: 10,
+    color: COLOR.textPrimary,
+    fontWeight: 450,
+    lineHeight: 13,
+  }
+}
+
+export { COLOR, CONTAINER, TEXT };
